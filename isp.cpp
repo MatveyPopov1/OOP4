@@ -45,8 +45,6 @@ public:
 };
 
 void showISPExample() {
-    cout << "--- Пример Interface Segregation Principle ---\n\n";
-
     Car car;
     car.Start();
     car.Accelerate();
@@ -67,6 +65,4 @@ void showISPExample() {
     ship.Accelerate();
     ship.Sail();
     ship.Stop();
-
-    cout << "\n----------------------------------------------\n\n";
 }
