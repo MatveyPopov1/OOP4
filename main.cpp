@@ -1,6 +1,8 @@
 #include <iostream>
 #include "srp.cpp"
 #include "ocp.cpp"
+#include "isp.cpp"
+
 using namespace std;
 
 int main()
@@ -27,6 +29,8 @@ int main()
     manager.addVehicle(make_unique<SportsCar>(50000, 10000));
 
     manager.showAllCosts();
+
+    showISPExample();
 
     return 0;
 }
