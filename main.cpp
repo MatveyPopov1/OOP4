@@ -2,6 +2,7 @@
 #include "srp.cpp"
 #include "ocp.cpp"
 #include "isp.cpp"
+#include "dip.cpp"
 
 using namespace std;
 
@@ -31,6 +32,18 @@ int main()
     manager.showAllCosts();
 
     showISPExample();
+
+    ProductionManager Productionmanager;
+
+    // Устанавливаем первую сборочную линию и запускаем производство
+    Productionmanager.setAssemblyLine(make_unique<AssemblyLineA>());
+    Productionmanager.startProduction();
+
+    cout << "\n";
+
+    // Устанавливаем другую сборочную линию и снова запускаем производство
+    Productionmanager.setAssemblyLine(make_unique<AssemblyLineB>());
+    Productionmanager.startProduction();
 
     return 0;
 }
