@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lsp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="dip.cpp" />
     <ClCompile Include="srp.cpp" />

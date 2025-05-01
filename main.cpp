@@ -3,6 +3,7 @@
 #include "ocp.cpp"
 #include "isp.cpp"
 #include "dip.cpp"
+#include "lsp.cpp"
 
 using namespace std;
 
@@ -44,6 +45,17 @@ int main()
     // Устанавливаем другую сборочную линию и снова запускаем производство
     Productionmanager.setAssemblyLine(make_unique<AssemblyLineB>());
     Productionmanager.startProduction();
+
+
+    //lsp
+    Car car;
+    Truck truck;
+    Motorcycle motorcycle;
+
+    testVehicle(car);
+    testVehicle(truck);
+    testVehicle(motorcycle);
+
 
     return 0;
 }
